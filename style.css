@@ -115,10 +115,6 @@ body {
 .project-img {
     width:80%;
 }
-.project-img-3 {
-    width:110%;
-    height:70% ;
-}
 .projects-title {
     font-size: 50px;
     font-weight: bold;
@@ -126,10 +122,13 @@ body {
 }
 .collection-box {
     display: flex;
+    flex-direction: row;
+    width:100%;
 }
 .box {
     margin-bottom: 60px;
-   
+    width: 400px;
+    height: 100%;
 }
 .learn-more {
     text-decoration: none;
@@ -146,7 +145,14 @@ body {
 }
 .projects-text {
     padding-left: 30px;
-   
+}
+
+/* Section-3-clients  */
+.clients-container {
+    height: 500px;
+    width: 90%;
+    background-color: aqua;
+    margin:100px;
 }
 
 
