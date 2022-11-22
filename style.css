@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+
+
+* {
+   box-sizing: border-box;
+   padding:0;
+   margin:0;
+}
+
+body {
+   font-family: "Roboto", sans-serif;
+}
+
+/* Header */
+#header {
+   margin:40px 100px;;
+}
+.navbar-container {
+    height: 70px; 
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.navbar ul{
+    list-style: none;
+    display:flex; 
+    justify-content: space-between; 
+    width:250px;
+    color:darkgrey;
+    cursor: pointer;
+}
+
+.contact-btn {
+    padding: 10px 20px;
+    background-color: rgb(7, 7, 198);
+    color:white;
+    border: none;
+    cursor: pointer;
+}
+
+.ul li .link:active {
+    color: rgb(53, 55, 166);
+} 
+
+/* Main */
+
+.main-container {
+    height:600px;
+    display:flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+.text-main {
+    width:60%;
+    margin: 100px;
+    display:flex; 
+    flex-direction: column;
+    justify-content:center
+    
+}
+.title-main {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.description {
+    font-size: 20px;
+    color:dimgrey;
+    margin-bottom: 40px;
+}
+
+.work-btn {
+    padding: 10px 20px;
+    background-color: rgb(247, 247, 251);
+    color:rgb(127, 124, 124);
+    border: none;
+    cursor: pointer;
+}
+.touch-btn {
+    padding: 10px 20px;
+    background-color: rgb(7, 7, 198);
+    color:white;
+    border: none;
+    cursor: pointer;
+}
+.hero-img {
+    width: 80%;
+}
+
+/* Section-1-logo  */
+
+.logos-container {
+    margin-top: 100px;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+ /* SmartPhones */
+ @media only screen and (max-width: 500px) {
+    body {
+      background: red;
+    }
+    
+
+   
+  }
