@@ -117,36 +117,41 @@ body {
     height: 600px;
     display: flex;
     justify-content: center;
+    margin-bottom: 300px;
 }
 .projects-container {
-    height: 400px;
+    height: 600px;
+
 }
 .project-img {
-    width:80%;
+    /* width:80%; */
+    height: 302.86px;
+    margin-bottom: 20px;
+    width:100%;
 }
 .projects-title {
     font-size: 50px;
     font-weight: bold;
-    margin-bottom: 70px;
+    margin-left: 40px;
+    margin-bottom: 160px;
 }
 .collection-box {
     display: flex;
     flex-direction: row;
-    width: 120%;
+    height: 65%;
     align-items: center;
-
+    justify-content: space-evenly;
 }
 .box {
     margin-bottom: 60px;
     width: 400px;
-    height: 100%;
+    height: 120%;
+    background-color:white;
+    margin-left:40px;
 }
 .learn-more {
     text-decoration: none;
     color: rgb(7, 7, 198);
-}
-.project-img {
-    margin-bottom: 20px;
 }
 .box h3 {
     margin-bottom: 20px;
@@ -191,17 +196,15 @@ body {
    display: flex;
    align-items: center;
    justify-content: center;
-  
 }
 .client-image {
-    width:20%;
-    height: 20px;
+    width:6%;
+    height:100%;
 }
 .client-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
 }
 .client-name {
     color:darkcyan;
@@ -211,8 +214,9 @@ body {
     font-size: 14px;
 }
 .face {
-    width:20%;
-    border-radius:50px;
+    width:50px;
+    height:50px;
+    border-radius:50%;
 }
 .emoji-top-left img{
     width:15%;
@@ -326,7 +330,6 @@ body {
     flex-direction: column;
     justify-content: center;
     width:30%;
-    
 }
 .foot-logo {
     margin-bottom: 30px;
@@ -344,15 +347,43 @@ body {
     height: 150px;
     width:350px;
     margin-top: 100px;
-        
 }
 .footer-link {
     text-decoration: none;
     color:#072AC8 ;
 }
+/* -------- Projects CSS ---------*/
 
-
-
+.project-container {
+    display: flex;
+    flex-direction: column;
+}
+.project-title {
+    font-size: 45px;
+    margin-left:100px;
+    margin-top: 80px;
+}
+.project-info {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin: 40px 100px;
+    color: #6C718B;
+}
+.square-img {
+    width: 90%;
+    height: 600px;
+    margin: 100px 160px 100px 100px;
+}
+.project-text {
+    margin: 70px 100px 200px 100px;
+    line-height: 30px;
+    font-size: 20px;
+    color:#6C718B;  
+}
+.project-text p{
+   margin-bottom: 40px;
+}
 
 
 
