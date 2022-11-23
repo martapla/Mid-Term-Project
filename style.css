@@ -117,7 +117,7 @@ body {
     height: 600px;
     display: flex;
     justify-content: center;
-    margin-bottom: 300px;
+    margin-bottom: 200px;
 }
 .projects-container {
     height: 600px;
@@ -384,6 +384,7 @@ body {
 .project-text p{
    margin-bottom: 40px;
 }
+
 
 
 
