@@ -10,5 +10,7 @@
 
 ***Day 2 - 22 Nov.***  => HTML & CSS Home Page Structure => Header - Main - Logo Section - Projects Section - Client Section.
 
-***Day 2 - 23 Nov.***  => Home Page => Html & Css Finished ✔️
+***Day 3 - 23 Nov.***  => Home Page => Html & Css Finished ✔️
                           Project Page => Html & Css Finished ✔️
+
+***Day 4 - 24 Nov.***  => ContactUs Page => Html & Css Finished ✔️                          
