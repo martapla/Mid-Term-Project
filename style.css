@@ -38,7 +38,6 @@ body {
     width:300px;
     cursor: pointer;
 }
-
 .navbar .nav-links li a{
     color: grey;
     text-decoration: none;
@@ -60,18 +59,7 @@ body {
     color:white;
     border: none;
     cursor: pointer;
-}
-
-/* mediaQuery - Header */
-
-@media (max-width: 767px){
-   body { margin:0px;} 
-}
-.contact-btn {
-    display:none;
-}
-.navbar-container {
-     width: 95%;
+    text-decoration: none;
 }
 .hamburguer {
     display:none;
@@ -87,6 +75,35 @@ body {
     background-color: white;
 }
 
+/* mediaQuery - Header */
+
+@media (max-width: 767px){
+
+body { margin:0px;} 
+
+#header {
+    margin-bottom: 0px;
+}
+.contact-btn {
+    display:none;
+}
+.navbar-container {
+     width: 95%;
+}
+/* .hamburguer {
+    display:none;
+    cursor:pointer;
+}
+.bar {
+    display:block;
+    width:25px;
+    height:3px;
+    margin:5px auto;
+    -webkit-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    background-color: white;
+} */
+}
 /* Main */
 
 .main-container {
@@ -138,12 +155,35 @@ body {
 
 .main-container {
     margin-top:0px;
+    margin-left: 0px;
+    margin-right: 0px;
     display: flex;
     flex-direction: column;
     width:90%;
 } 
+.title-main {
+    width:600px;
+    text-align: center;
+    margin:0px;
+    margin-bottom: 30px;
 }
-/* Section-1-logo  */
+.text-main {
+    width:650px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.btn-main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.image-main {
+   margin-left:150px;
+   width:120%;
+}
+}
+/* Section-1-Logos  */
 
 .logos-container {
     margin:150px 100px 300px 100px;
@@ -151,6 +191,20 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     padding-right: 40px;
+}
+
+/* ------- MediaQuery Section-1-Logos ------ */
+
+@media (max-width: 767px){
+   
+    /* .logos-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    } */
+    .amaZon {
+    display:none;
+    }
 }
 
 /* Section-2-projects */
