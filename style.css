@@ -5,7 +5,7 @@
    box-sizing: border-box;
    padding:0;
    margin:0;
-   border: red 1px solid;
+   /* border: red 1px solid; */
 }
 
 body {
@@ -223,7 +223,7 @@ body { margin:0px;}
 .project-img {
     height: 270px;
     margin-bottom: 20px;
-    width:397.81px;
+    width: 326.81px;
 }
 .projects-title {
     font-size: 45px;
