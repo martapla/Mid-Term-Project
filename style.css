@@ -5,7 +5,7 @@
    box-sizing: border-box;
    padding:0;
    margin:0;
-   /* border: red 1px solid; */
+   
 }
 
 body {
@@ -75,11 +75,14 @@ body {
     background-color: white;
 }
 
-/* mediaQuery - Header */
+/* ---------- MediaQuery - Header --------------*/
 
 @media (max-width: 767px){
 
+*{ margin: none;}
+     
 body { margin:0px;} 
+
 
 #header {
     margin-bottom: 0px;
@@ -90,19 +93,6 @@ body { margin:0px;}
 .navbar-container {
      width: 95%;
 }
-/* .hamburguer {
-    display:none;
-    cursor:pointer;
-}
-.bar {
-    display:block;
-    width:25px;
-    height:3px;
-    margin:5px auto;
-    -webkit-transition:all 0.3s ease-in-out;
-    transition:all 0.3s ease-in-out;
-    background-color: white;
-} */
 }
 /* Main */
 
@@ -197,11 +187,7 @@ body { margin:0px;}
 
 @media (max-width: 767px){
    
-    /* .logos-container {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    } */
+   
     .amaZon {
     display:none;
     }
@@ -486,12 +472,9 @@ body { margin:0px;}
    margin-bottom: 40px;
 }
 
-  /* ------------------- MediaQuery ------------------ */
+  /* ------------------- MediaQuery Hamburguer ------------------ */
 
 @media (max-width: 767px){
-*{
-   margin: none;
-}
 
 .hamburguer {
    display:block;
