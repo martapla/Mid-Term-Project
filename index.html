@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circle Project</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="mobileFirst.css"> -->
     <script src="index.js"></script>
 </body>
 </head>
@@ -21,7 +22,7 @@
                 <ul class="nav-links">
                     <li><a href="#" id="active-navbar" class="link">Home</a></li>
                     <li><a href="./projects.html" class="link">Projects</a></li>
-                    <li><a href="#" class="link">Service</a></li>
+                    <li><a href="#" class="link">Services</a></li>
                 </ul>
                 <div class="hamburguer">
                     <span class="bar"></span>
@@ -39,34 +40,48 @@
     </div>
      
 
-   <!------- Main ------->
-   <div id="main">
-     <div class="main-container">
-        <div class="text-main">
-            <h1 class="title-main">Empower Your Business With Stunning Design!</h1>
+   <!------- Heros Section ------->
+   <section id="heros">
+     <div class="heros-container">
+        <!-- left side  -->
+        <div class="hero-content">
+            <h1 class="hero-heading">Empower Your Business With Stunning Design!</h1>
             <p class="description">Circle is a digital design and development studio.<br> We design and develop astonishing websites<br> and mobile apps.</p>
             <div class="btn-main">
                 <button class="work-btn">See our work</button> 
                 <button class="touch-btn">Get in touch</button> 
             </div>
         </div>
-        <div class="image-main">
+        <!-- right side  -->
+        <div id="hero-imgs">
+            <img
+              class="cardimg cardimg1"
+              src="./project-assets/hero-section/card-1.png"
+              alt="card1"
+            />
+            <img
+              class="heroimg"
+              src="./project-assets/hero-section/hero-image.png"
+              alt="hero"
+            />
+            <img
+              class="cardimg cardimg2"
+              src="./project-assets/hero-section/card-2.png"
+              alt="card2"
+            />
+          </div>
+        </div>
+
+
+
+        <!-- <div class="image-main">
             <img src= "./project-assets/hero-section/hero-image.png"  alt="hero img" class="hero-img"/>
 
-       <!-- Cards - needs Css -->
-        <!-- <div class="img-top-left">
-            <img src="./project-assets/hero-section/card-1.png" alt="">
-        </div>
-        <div class="img-bottom-right">
-            <img src="./project-assets/hero-section/card-1.png" alt="">
-        </div>
-    </div> -->
-
-     </div>
-   </div>
+        </div> -->
+   </section>
 
    <!----- Section-1-logo ------>
-   <div id="section-1-logo">
+   <section id="section-1-logo">
         <div class="logos-container">
             <div class="logos">
                 <img src="./project-assets/logos/airbnb-logo.svg" alt="airbnb">
@@ -84,10 +99,10 @@
                 <img src="./project-assets/logos/amazon-logo.svg"  class="amaZon" alt="amazon">
             </div>
         </div>
-   </div>
+   </section>
 
-   <!----- Section-2-projects ----->
-   <div id="section-2-projects">
+   <!----- Section-2-Recent Projects ----->
+   <section id="section-2-projects">
         <div class="projects-container">
             <h2 class="projects-title"> Recent Projects</h2>
             <div class="collection-box">
@@ -118,7 +133,7 @@
             </div>
         </div>
 
-   </div>
+   </section>
 
    <!----- Section-3-clients ----->
    <div id="section-3-clients">
