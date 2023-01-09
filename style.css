@@ -5,7 +5,7 @@
    box-sizing: border-box;
    padding:0;
    margin:0;
-   font-size: 14px;
+   font-size: 16px;
    border: 1px rgb(232, 158, 67) solid;
   
 }
@@ -86,29 +86,50 @@ body {
 }
 .bar {
     display:block;
-    width:25px;
+    width:20px;
     height:3px;
     margin:5px auto;
     -webkit-transition:all 0.3s ease-in-out;
     transition:all 0.3s ease-in-out;
-    background-color: white;
-    color:#FFC600
+    background-color: rgb(5, 5, 5);
+    /* color:#FFC600 */
+    border-radius: 10px;
 }
 
-/* ---------- MediaQuery - Header --------------*/
+/* ---------- MediaQuery - Tablet - Header --------------*/
 
-@media (max-width: 767px){
-
-/* *{ margin: none;} */
-     
-body { margin:0px;} 
+@media (max-width: 768px){
 
 li {
     display:none ;
 }
 .hamburguer {
+    display:block;
+    width: 30%;
+    margin-left: 380px;
+    margin-top: 5px;
+}
+.navbar {
+    width: 60%;
+    height:50px;
+}
+.contact-btn {
+    display:none;
+}
+.navbar-container {
+    width: 80%;
+    margin:0;
+}
+}
+
+/* ---------- MediaQuery - Mobile - Header --------------*/
+@media (max-width: 425px){
+li {
+    /* display:none ; */
+}
+.hamburguer {
     width: 40%;
-    margin:145px;
+    margin:10px 0px 0px 140px;
 }
 .navbar {
     width: 40%;
@@ -117,18 +138,19 @@ li {
     display:none;
 }
 .navbar-container {
-     width: 80%;
-     margin:0;
+    width: 80%;
+    margin:0;
 }
+
 }
-/* ------ Heros Section ------ */
+/* ---------- Heros Section --------- */
+/* ---------------------------------- */
 
 .heros-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 10px;
-    margin-left: 10px;
     border: green solid 1px;
     width:100%;
 }
@@ -137,19 +159,23 @@ li {
     display:flex; 
     flex-direction: column;
     justify-content:center;
-    width:50%;
+    width:58%;
     border: rgb(26, 0, 128) solid 1px;
   
 }
 .hero-heading {
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: bold;
     margin-bottom: 20px;
+    line-height: 90px;
 }
 .description {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color:dimgrey;
     margin-bottom: 40px;
+    line-height: 30px;
+    width:90%;
+   
 }
 .work-btn {
     padding: 10px 20px;
@@ -179,20 +205,20 @@ li {
 
 .cardimg1 {
     position: absolute;
-    left: 0%;
+    left: -10%;
     top: 0%;
-    width: 35%;
+    width: 50%;
 }
 .cardimg2 {
     position: absolute;
     right: 0%;
-    bottom: 0%;
-    width: 35%;
+    bottom: -10%;
+    width: 50%;
 }
 
-/* ------- MediaQuery Main ------ */
+/* ------- MediaQuery - Tablet - Heros ------ */
 
-@media (max-width: 767px){
+@media (max-width: 768px){
 
 .heros-container {
     margin-top:0px;
@@ -203,6 +229,7 @@ li {
     width:100%;
 } 
 .hero-content {
+    align-items: center;
     width: 100%;
     margin:0px;
     padding: 10px;
@@ -211,28 +238,58 @@ li {
     width:100%;
     text-align: center;
     margin:0px;
+    margin-top: 20px;
     margin-bottom: 30px;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    line-height: 80px;
 }
 
 .description {
-    width:100%;
+    width:90%;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 30px;
 }
-.hero-imgs {
-    width: 200%;
-   /* margin-left: 200px; */
+
+#hero-imgs {
+    position: relative;
+    width: 100%;
+    display:flex;
+    align-items: center; 
+    justify-content: center;
 }
 
 .heroimg {
-    width: 180%;
+    width: 70%;
     justify-items: center;
-    margin-left: 200px;
     margin-top: 30px;
+    align-items: center;
+}
+.cardimg1 {
+    left: 0%;
+    top: 3%;
+    width: 40%;
+}
+.cardimg2 {
+    right: 0%;
+    bottom: -25%;
+    width: 40%;
 }
 
+}
+
+ /* ------- Media Query -- Mobile -- Heros ------- */
+@media (max-width: 425px){
+.hero-heading {
+    font-size: 2rem;
+    line-height: 50px;
+}
+.description {
+    width:100%;
+    font-size: 1.1rem;
+    padding: 5px;
+}
+.heroimg {
+    width:90%;
+}
 .cardimg1 {
     display: none;
 }
@@ -241,38 +298,68 @@ li {
 }
 .btn-main {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
     justify-content: center;
+    width: 40%;
 }
 }
 /* ----------- Section-1-Logos ------------ */
+/* ---------------------------------------- */
 
 .logos-container {
     margin:60px 0px 100px 30px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    width: 50%;
+    width: 90%;
 }
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
 .logos img{
     width:60%;
-    margin:20px;
 }
 
-/* ------- MediaQuery Section-1-Logos ------ */
+/* ------- MediaQuery - Tablet- Section-1-Logos ------ */
 
-@media (max-width: 767px){
+@media (max-width: 768px){
    
- .logos-container {
+.logos-container {
+    position: relative;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    width: 80%;
+    margin:130px auto;
+    grid-column-gap:130px;
+    grid-row-gap:50px;
 }
-   
- .amaZon {
+.logos {
+   width: 70%;
+}
+.amaZon {
     display:none;
 }
 }
+/* ------- Media Query - Mobile -------- */
+@media (max-width: 425px){
+.logos-container {
+    grid-column-gap:0px;
+    width: 90%;
+    margin:70px auto;
+}
+.logos {
+    width: 100%;
+}
+.logos img{
+    width:60%;
+}
 
+}
 /* ------- Section-2-Recent Projects --------*/
+/* ----------------------------------------- */
 
 .projects-container {
    display:flex;
@@ -280,25 +367,28 @@ li {
    justify-content: space-evenly;
    width: 100%;
    border: 1px solid darkcyan;
-   margin-left: 10px;
+  
 }
 
 .projects-title {
-    font-size: 22px;
+    font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 50px;
+    width:90%;
+    margin:50px auto 70px auto;
 }
 
-.project-img {
-    height: 100px;
+.box img {
+    height: 200px;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .collection-box {
     display: flex;
     flex-direction: row;
-    height: 55%;
-    width: 55%;
+    height: 300px;
+    width: 90%;
+    margin:50px auto;
     align-items: center;
     gap:10px;
     justify-content:space-between;
@@ -311,10 +401,6 @@ li {
     background-color:white;
 }
 
-.box img {
-    width: 100%;
-    height:45%;
-}
 .learn-more {
     text-decoration: none;
     color: rgb(7, 7, 198);
@@ -329,7 +415,18 @@ li {
     padding-left: 30px;
 }
 
-/* Section-3-clients  */
+/* ------- MediaQuery - Tablet- Section-2- Projects ------ */
+
+@media (max-width: 768px){
+}
+
+/* ------- Media Query - Mobile -------- */
+@media (max-width: 425px){
+
+}
+
+/* ----------- Section-3-clients ---------- */
+/* ---------------------------------------- */
 
 #section-3-clients {
     position: relative;
