@@ -6,7 +6,7 @@
    padding:0;
    margin:0;
    font-size: 16px;
-   border: 1px rgb(232, 158, 67) solid;
+   /* border: 1px rgb(232, 158, 67) solid; */
   
 }
 body , html {
@@ -16,7 +16,6 @@ body , html {
 body {
    font-family: "Roboto", sans-serif;
    background-color: #F1F4FB;
-   border: 1px red solid;
 }
 
 /* --------------- Header --------------*/
@@ -93,12 +92,10 @@ body {
     -webkit-transition:all 0.3s ease-in-out;
     transition:all 0.3s ease-in-out;
     background-color: rgb(5, 5, 5);
-    /* color:#FFC600 */
     border-radius: 10px;
 }
 
 /* ---------- MediaQuery - Tablet - Header --------------*/
-
 @media (max-width: 768px){
 
 li {
@@ -125,9 +122,7 @@ li {
 
 /* ---------- MediaQuery - Mobile - Header --------------*/
 @media (max-width: 425px){
-li {
-    /* display:none ; */
-}
+
 .hamburguer {
     width: 40%;
     margin:10px 0px 0px 140px;
@@ -142,7 +137,6 @@ li {
     width: 80%;
     margin:0;
 }
-
 }
 /* ---------- Heros Section --------- */
 /* ---------------------------------- */
@@ -152,7 +146,6 @@ li {
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 10px;
-    border: green solid 1px;
     width:100%;
 }
 .hero-content {
@@ -161,8 +154,6 @@ li {
     flex-direction: column;
     justify-content:center;
     width:58%;
-    border: rgb(26, 0, 128) solid 1px;
-  
 }
 .hero-heading {
     font-size: 4rem;
@@ -215,7 +206,6 @@ li {
 }
 
 /* ------- MediaQuery - Tablet - Heros ------ */
-
 @media (max-width: 768px){
 
 .heros-container {
@@ -268,11 +258,10 @@ li {
     bottom: -25%;
     width: 40%;
 }
-
 }
-
- /* ------- Media Query -- Mobile -- Heros ------- */
+/* ------- Media Query -- Mobile -- Heros ------- */
 @media (max-width: 425px){
+
 .hero-heading {
     font-size: 2rem;
     line-height: 50px;
@@ -362,8 +351,6 @@ li {
    width: 100%;
    height: 600px;
    margin-bottom: 50px;
-   border: 1px solid darkcyan;
-  
 }
 .projects-title {
     font-size: 2rem;
@@ -432,6 +419,7 @@ li {
 
 .projects-container {
     height:100%;
+    margin-bottom: 40px;
 }
 .collection-box {
     display:grid;
@@ -443,7 +431,7 @@ li {
 }
 .projects-title {
    text-align: center;
-   margin-bottom: 30px;
+   margin-bottom: 40px;
 }
 .box {
     width:100%;
@@ -452,7 +440,7 @@ li {
 }
 }
 
-/* ----------- Section-3-clients ---------- */
+/* ----------- Section-3-Clients ---------- */
 /* ---------------------------------------- */
 
 #section-3-clients {
@@ -464,8 +452,6 @@ li {
     display: flex;
     justify-content: center;
     align-content: center;
-    border:1px solid plum;
-
 }
 .clients-container {
     width:65%;
@@ -476,7 +462,6 @@ li {
     justify-content: center;
     color:white;
     margin:60px;
-    border:1px solid rgb(233, 56, 233);
 }
 .client-title {
     font-size: 2.2rem;
@@ -495,28 +480,32 @@ li {
    display: flex;
    align-items: center;
    justify-content: space-around;
-   width:40%;
+   width:50%;
 }
 .client-image {
-    width:6%;
+    width:35%;
+    height:125%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.face {
+    width:60%;
     height:100%;
+    border-radius:50%;
 }
 .client-info {
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 .client-name {
     color:rgb(123, 204, 224);
-    font-size: 17px;
+    font-size: 1.2rem;
 }
 .client-position {
-    font-size: 14px;
-}
-.face {
-    width:50px;
-    height:50px;
-    border-radius:50%;
+    font-size: 1.1rem;
 }
 .emoji-top-left img{
     width:15%;
@@ -549,12 +538,14 @@ li {
     right:0;
     margin-bottom:50px;
     margin-right: 50px;
-
 }
 
-/* ------- MediaQuery - Tablet- Section-2- Projects ------ */
+/* ------- MediaQuery - Tablet- Section-3 Clients ------ */
 @media (max-width: 768px){
 
+#section-3-clients {
+    margin-top: 0px;
+}
 .client-title {
    padding: 25px;
    margin-bottom: 50px;
@@ -566,30 +557,53 @@ li {
 .client {
     width:50%;
 }
+.client-name {
+    font-size: 1rem;
+}
+.client-position {
+    font-size: 0.8rem;
+}
 }
 
 /* ------- Media Query - Mobile -------- */
 @media (max-width: 425px){
-    
+
 .emoji-top-left , .emoji-top-right , 
 .emoji-bottom-left , .emoji-bottom-right{
     display: none;
 }
 #section-3-clients {
-    height: 50%;
+    height: 55%;
+    width:100%;
 }
 .client-title {
     font-size: 1.5rem;
-    width:130%;
+    width:100%;
     padding: 0px;
 }
 .client-text {
-    font-size: 1rem;
+    font-size: 1.2rem;
     width:100%;
     margin-bottom: 40px;
 }
 .clients-container {
     width:100%;
+}
+.client {
+    width:70%;
+}
+.client-info {
+    width: 100%;
+}
+.client-image {
+    width: 62%;
+   
+}
+.client-name {
+    font-size: 1rem;
+}
+.client-position {
+    font-size: 0.8rem;
 }
 }
 
@@ -598,42 +612,111 @@ li {
 
 .services-container {
   height: 600px;
-  margin:250px 100px 0px 100px;
+  width:90%;
+  margin:20px auto;
 }
 .services-title {
-    font-size: 45px;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 70px;
-    margin-left: 90px;
 }
 .services-boxes {
     display: flex;
     flex-direction: row;
+    gap:35px;
     justify-content:space-evenly;
-   
 }
 .ser-box {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: azure;
-    height: 300px;
+    background-color: white;
+    height: 350px;
     padding-right: 30px;
-    
+    width:40%;
 }
 .service-img {
-    width: 20%;
+    width: 25%;
     margin-left: 30px;
     background-color: rgb(218, 231, 242);
     border-radius: 50px;
     padding: 13px;
     margin-bottom: 10px;
 }
+.service-text {
+    margin-bottom: 10px;
+}
 .ser-box h3 {
     margin-bottom: 20px;
+    font-size: 1.4rem;
 }
 .ser-box p{
     margin-bottom: 20px;
+    font-size: 1rem;
+}
+.ser-box a {
+    text-decoration: none;
+    color:#072AC8;
+    font-weight: bold;
+}
+/* ------- MediaQuery - Tablet- Section-4 Services ------ */
+@media (max-width: 768px){
+.ser-box {
+    height:440px;
+    width:80%;
+    gap:0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding-right: 0px;
+}  
+.service-img {
+    width:40%;
+    margin-top: 10px;
+}
+.service-text {
+    padding-left: 0px;
+    margin:0px;
+    width:70%;
+}
+}
+/* ------- Media Query - Mobile -------- */
+@media (max-width: 425px){
+
+.services-container {
+  height:100%;
+}
+.services-title {
+    font-size: 1.9rem;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.services-boxes{
+    height:100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 15px;
+    justify-items: center;
+}
+.ser-box {
+    height: 100%;
+    width:95%;
+    margin: 40px auto;
+}
+.service-img {
+    width:25%;
+}
+.service-text {
+    width:80%;
+}
+.ser-box h3 {
+    font-size: 1.5rem;
+}
+.ser-box p{
+    font-size: 0.9rem;
+}
 }
 
 /* --------- Section 5 - Questions  --------- */
@@ -701,7 +784,8 @@ li {
     text-decoration: none;
     color:#072AC8 ;
 }
-/* -------- Projects CSS ---------*/
+/* ------------ Projects CSS ------------*/
+/* ------------------------------------- */
 
 .project-container {
     display: flex;
@@ -734,7 +818,7 @@ li {
    margin-bottom: 40px;
 }
 
-  /* ------------------- MediaQuery Hamburguer ------------------ */
+  /* --------- MediaQuery Hamburguer -------- */
 
 @media (max-width: 767px){
 
