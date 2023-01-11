@@ -6,7 +6,7 @@
    padding:0;
    margin:0;
    font-size: 16px;
-   /* border: 1px rgb(232, 158, 67) solid; */
+   border: 1px rgb(232, 158, 67) solid;
   
 }
 body , html {
@@ -117,6 +117,34 @@ li {
 }
 .navbar-container {
     width: 80%;
+}
+  /* --------- MediaQuery Hamburguer -------- */
+
+.hamburguer.active .bar:nth-child(2) {
+    opacity:0;
+}
+.hamburguer.active .bar:nth-child(1) {
+    transform:translateY(8px) rotate(45deg);
+}
+.hamburguer.active .bar:nth-child(3) {
+    transform:translateY(-8px) rotate(-45deg);
+}
+.nav-links {
+    position:fixed;
+    left:-100%;
+    top:70px;
+    gap:0;
+    flex-direction: column;
+    background-color: #292e47;
+    width:100%;
+    text-align: center;
+    transition: 0.3s;
+}
+.link {
+    margin:16px 0;
+}
+.nav-links.active {
+    left:0;
 }
 }
 
@@ -805,13 +833,14 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin:0px 60px;
+    width:90%;
+    margin:0px auto;
 }
 .footer-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width:30%;
+    width:40%;
 }
 .foot-logo {
     margin-bottom: 30px;
@@ -826,7 +855,7 @@ li {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    height: 150px;
+    height: 120px;
     width:350px;
     margin-top: 100px;
 }
@@ -847,7 +876,7 @@ li {
     flex-direction: column; 
     align-items: center;
     width:100%;
-    margin:0px;
+    margin:0px auto;
     height: 100%;
     justify-content: space-around;
 }
@@ -866,72 +895,84 @@ li {
     background-color: #FFC600;
 }
 }
-
-/* ------------ Projects CSS ------------*/
-/* ------------------------------------- */
+/* ------------------------------------------------------- */
+       /* ------------ Projects.html  CSS ------------*/
+/* ------------------------------------------------------- */
 
 .project-container {
     display: flex;
     flex-direction: column;
+    width:100%;
+    height:220px;
 }
 .project-title {
-    font-size: 45px;
-    margin-left:100px;
-    margin-top: 80px;
+    font-size: 3rem;
+    width:90%;
+    margin: 30px auto;
 }
 .project-info {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    margin: 40px 100px;
+    width:90%;
+    margin: 5px auto;
     color: #6C718B;
 }
-.square-img {
-    width: 90%;
-    height: 600px;
-    margin: 100px 160px 100px 100px;
+.project-date {
+    font-size: 1.5rem;
 }
-.project-text {
-    margin: 70px 100px 200px 100px;
-    line-height: 30px;
-    font-size: 20px;
-    color:#6C718B;  
+.project-ui {
+    font-size: 1.5rem;
+}
+.main-project {
+    width:100%;
+    height:420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-project img {
+    width: 90%;
+    height: 400px;
+    margin: 0px auto;
 }
 .project-text p{
-   margin-bottom: 40px;
+    width:90%;
+    margin: 40px auto;
+    line-height: 30px;
+    font-size: 1.3rem; 
 }
-
-  /* --------- MediaQuery Hamburguer -------- */
-
-@media (max-width: 767px){
-
-.hamburguer {
-   display:block;
-}
-.hamburguer.active .bar:nth-child(2) {
-  opacity:0;
-}
-.hamburguer.active .bar:nth-child(1) {
-    transform:translateY(8px) rotate(45deg);
-}
-.hamburguer.active .bar:nth-child(3) {
-    transform:translateY(-8px) rotate(-45deg);
-}
-.nav-links {
-    position:fixed;
-    left:-100%;
-    top:70px;
-    gap:0;
+/* ------- Media Query - Mobile -------- */
+@media (max-width: 425px){
+.project-info {
     flex-direction: column;
-    background-color: #292e47;
+    height: 25%;
+}
+.project-title {
+    font-size: 2.5rem;
+}
+.project-date , .project-ui{
+    font-size: 1.2rem;
+}
+}
+
+ /* ------ Section-2- Projects -------*/
+ /* --------------------------------- */
+.other-container {
     width:100%;
+    height:100%;
+    margin-top:20px;
+}
+.other-title {
+    font-size: 2.5rem; 
+    height:50px;
+    width:90%;
+    margin: 40px auto;
+}
+@media (max-width: 425px){
+.other-title {
+    font-size: 2rem; 
     text-align: center;
-    transition: 0.3s;
-}
-.link {
-    margin:16px 0;
-}
-.nav-links.active {
-    left:0;
-}
+    margin: 20px auto;
+}   
 }
