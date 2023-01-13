@@ -5,16 +5,20 @@
    box-sizing: border-box;
    padding:0;
    margin:0;
-  
+   /* border:1px solid pink; */
+}
+body , html {
+    height: 100%;
+    width:100%;
 }
 
 body {
    font-family: "Roboto", sans-serif;
    background-color: #F1F4FB;
-   margin:0px 200px;
 }
 
-/* Header */
+/* ---------------- Header ------------------*/
+/* ----------------------------------------- */
 #header {
     width:82%;
     margin:40px 100px;
@@ -62,40 +66,87 @@ body {
     cursor: pointer;
     text-decoration: none;
 }
+.hamburguer {
+    display:none;
+    cursor:pointer;
+}
+.bar {
+    display:block;
+    width:20px;
+    height:3px;
+    margin:5px auto;
+    -webkit-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    background-color: rgb(5, 5, 5);
+    border-radius: 10px;
+}
 
-/* ---------  Contact  --------- */
+/* ---------- MediaQuery - Tablet - Header --------------*/
+@media (max-width: 768px){
 
+li {
+    display:none ;
+}
+.hamburguer {
+    display:block;
+    width: 30%;
+    margin-left: 380px;
+    margin-top: 5px;
+}
+.navbar {
+    width: 60%;
+    height:50px;
+}
+.contact-btn {
+    display:none;
+}
+.navbar-container {
+    width: 80%;
+}
+
+
+/* ------------  Contact  ------------ */
+/* ----------------------------------- */
 
 .contact-container {
-    height: 500px;
+    width:100%;
 }
 .form-container {
+    width:90%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin:100px 100px;
+    margin:90px auto;
 }
 .contact-form {
     margin-bottom: 100px;
 }
 .form-title {
-    margin-left: 100px;
-    margin-top: 100px;
-    font-size: 60px;
+    width:90%;
+    margin:60px auto;
+    align-items: flex-start;
+    font-size: 3.2rem;
 }
 .contact-name {
     margin-bottom: 100px;
 }
-.contact-name, .text-name, .text-email , .text-phone
-,.contact-email,.contact-phone, .text-message, .contact-message {
-    font-size: 20px; 
+.contact-name, .text-name, .text-email , 
+.text-phone ,.contact-email,.contact-phone, 
+.text-message, .contact-message {
+    border:none;
+    font-size: 1.25rem; 
     color:#6C718B;
+}
+.text-name, .text-email , 
+.text-phone, .text-message {
+    background-color:#e6e7f1;
+    font-size: 1rem; 
+    margin-top: 10px;
 }
 .text-name {
     width: 100%;
     height: 50px;
     margin-bottom: 30px;
-    background-color:#dfe0e2;
     color:black;
     padding-left: 10px;
 }
@@ -110,7 +161,6 @@ body {
     width: 49%;
 }
 .text-email , .text-phone {
-    background-color: #dfe0e2;
     width:100%;
     height: 50px;
     padding-left: 10px;
@@ -120,7 +170,6 @@ body {
 }
 .text-message {
     width:100%;
-    background-color:#dfe0e2;
     margin-bottom: 20px;
     padding-left: 10px;
 }
@@ -129,11 +178,9 @@ body {
     height: 70px;
     background-color: #072AC8;
     color: white;
+    border: none;
+    font-size: 1rem; 
 }
-
-
-
-
 /* ---------  Footer ------------- */
 
 .footer-container {
