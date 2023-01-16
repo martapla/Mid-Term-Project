@@ -6,7 +6,7 @@
    padding:0;
    margin:0;
    font-size: 16px;
-   border: 1px rgb(232, 158, 67) solid;
+   /* border: 1px rgb(232, 158, 67) solid; */
   
 }
 body , html {
@@ -55,6 +55,9 @@ body {
     width:100%;
     cursor: pointer;
 }
+.contact-link {
+    display:none;
+}
 
 .nav-links li a{
     color: grey;
@@ -99,26 +102,28 @@ body {
 /* ---------- MediaQuery - Tablet - Header --------------*/
 @media (max-width: 768px){
 
-li {
-    display:none ;
+#header {
+    width: 100%;
+}
+.navbar-container {
+    width: 80%;
+    margin: 10px auto;
 }
 .hamburguer {
     display:block;
-    width: 30%;
-    margin-left: 380px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 .navbar {
+    display: flex;
     width: 60%;
     height:50px;
 }
 .contact-btn {
     display:none;
 }
-.navbar-container {
-    width: 80%;
+.contact-link {
+    display:block;
 }
-  /* --------- MediaQuery Hamburguer -------- */
 
 .hamburguer.active .bar:nth-child(2) {
     opacity:0;
@@ -133,15 +138,19 @@ li {
     position:fixed;
     left:-100%;
     top:70px;
-    gap:0;
     flex-direction: column;
-    background-color: #292e47;
-    width:100%;
+    background-color: #bcbfcd;
+    color:white;
+    margin:0px auto;
     text-align: center;
+    align-items: center;
     transition: 0.3s;
+    cursor: pointer;
+    height:120px;
 }
-.link {
-    margin:16px 0;
+.nav-links li a{
+    color: white;
+    cursor: pointer;
 }
 .nav-links.active {
     left:0;
