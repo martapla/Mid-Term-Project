@@ -159,19 +159,27 @@ body {
 
 /* ---------- MediaQuery - Mobile - Header --------------*/
 @media (max-width: 425px){
-
+.logo {
+    margin: 10px 0 0 10px;
+}
 .hamburguer {
     width: 40%;
-    margin:10px 0px 0px 140px;
+    margin:1px 0px 0px 0px;
+    position: relative;
+    right:-14%;
 }
 .navbar {
-    width: 40%;
+    /* width: 40%; */
+    width:7%;
 }
 .contact-btn {
     display:none;
 }
 .navbar-container {
-    width: 80%;
+    width: 90%;
+}
+.nav-links {
+    height: 164px; 
 }
 }
 /* ---------- Heros Section --------- */
@@ -301,6 +309,10 @@ body {
 .hero-heading {
     font-size: 2rem;
     line-height: 50px;
+}
+.hero-content {
+    width: 90%;
+    margin: 0 auto;
 }
 .description {
     width:100%;
@@ -609,7 +621,7 @@ body {
     display: none;
 }
 #section-3-clients {
-    height: 45%;
+    height: 50%;
     width:100%;
 }
 .client-title {
