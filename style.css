@@ -202,7 +202,7 @@ body {
     width:100%;
 }
 .hero-content {
-    margin:20px;
+    margin: 20px 20px 20px 45px;
     display:flex; 
     flex-direction: column;
     justify-content:center;
