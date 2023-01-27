@@ -7,11 +7,11 @@ const addPost = () => {
   
 // nos traemos los values/valores de los inputs
 let name = document.getElementById("name").value;
-// let email = document.getElementById("email").value;
-// let phone = document.getElementById("phone").value;
+let email = document.getElementById("email").value;
+let phone = document.getElementById("phone").value;
 let message = document.getElementById("message").value;
   
-console.log(`Name: ${name} - Message: ${message} `);
+console.log(`Name: ${name} - Email: ${email} - Phone: - ${phone} - Message: ${message} `);
 alert (`Thanks to Submit ${name} !`)
     
 
@@ -21,12 +21,12 @@ fetch("https://jsonplaceholder.typicode.com/posts",
 // Tipo de request que queremos ejecutar.
 method: "POST",
       
-  body: JSON.stringify({
-    title: name,
-    body: message,
-    userId:1,
+body: JSON.stringify({
+  title: name,
+  body:  `${email} ${phone} ${message}`,
+  userId:1,
 
-  }),
+}),
 
 headers: {
   "Content-type": "application/json; charset=UTF-8",
