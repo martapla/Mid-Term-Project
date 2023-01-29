@@ -269,14 +269,19 @@ body {
 }
 .s-form-done {
     display: none;
-    position: fixed;
-    top:0px;
-    left:0px;
     background-color: #e779cc;
     padding: 10px;
     text-align: center;
     align-items: center;
   }
+
+.s-form-fail {
+    display: none;
+    background-color: #f38a8a;
+    padding: 10px;
+    text-align: center;
+}
+  
 /* ---------- MediaQuery - Mobile - Contact --------------*/
 @media (max-width: 425px){
 .form-title {

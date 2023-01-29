@@ -15,7 +15,7 @@ console.log(`Name: ${name} - Email: ${email} - Phone: - ${phone} - Message: ${me
 alert (`Thanks to Submit ${name} !`)
     
 
-// Vamos a usar el fetch() para poder enviar info a el endpoint.
+// Vamos a usar el fetch() para poder enviar info al endpoint.
 fetch("https://jsonplaceholder.typicode.com/posts",
 {
 // Tipo de request que queremos ejecutar.
@@ -40,8 +40,13 @@ headers: {
 .then(() => {
     let formDone = document.querySelector(".s-form-done");
     formDone.style.display = "block";
+    console.log(formDone);
 })
-.catch((error) => console.log(error));
+.catch((error) => {
+  let formFail = document.querySelector(".s-form-fail");
+  formFail.style.display = "block";
+  console.log("ERROR");
+});
 };
   
 // window.addEventListener("load", () => {
