@@ -1,3 +1,4 @@
+![Alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/marta/Desktop/Screenshot%202023-02-10%20at%2020.12.08.png?version%3D1676056376117)
 
 ## Project description:
 
