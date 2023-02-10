@@ -1,4 +1,5 @@
-![Alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/marta/Desktop/Screenshot%202023-02-10%20at%2020.12.08.png?version%3D1676056376117)
+![Screenshot 2023-02-10 at 20 12 08](https://user-images.githubusercontent.com/101716371/218178589-d77be90d-c223-4a56-ac79-9a52dae9771f.png)
+
 
 ## Project description:
 
